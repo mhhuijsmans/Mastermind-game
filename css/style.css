@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+body {
+    margin: 0;
+    background-color: #faf6e9;
+}
+
+#container {
+    width: 35%;
+    min-width: 450px;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;   
+    flex-flow: column nowrap;
+}
+
+#mastercontainer {
+    width: 60%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;   
+    flex-flow: column nowrap;
+    background-image: url(../img/wood.jpg);
+    background-size: cover;
+    margin: 1em 0 1em 0;
+    padding: 1em 0.7em;
+    border-radius: 15px;
+    overflow-x: hidden;
+    box-shadow: -0.5em -0.8em 0 rgba(0,0,0,0.6) inset;
+}
+
+#solutioncontainer {
+    width: 100%;
+    padding: 0 0 0.5em 5%;
+}
+
+.solutioncolor {
+    display: inline-block;
+    width: 13%;
+    border-radius: 50%;
+    background-color: #faf6e9;
+    box-shadow: 0.25em 0.45em 0 #3c2d23 inset;
+    margin-right: 2%;
+}
+
+#guessescontainer {
+    width: 100%;
+}
+
+.guesscontainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;   
+    flex-flow: row nowrap;
+    width: 100%;
+    border-top: 1px solid #000;
+}
+
+.hintcontainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;   
+    flex-flow: row wrap;
+    width: 22%;
+    padding: 1%;
+}
+
+.hint {
+    display: inline-block;
+    width: 42%;
+    border-radius: 50%;
+    background-color: #faf6e9;
+    box-shadow: 0.2em 0.36em 0 #3c2d23 inset;
+    margin: 2%;
+}
+
+.guesscolorcontainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;   
+    flex-flow: row nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 78%;
+    border-left: 1px solid #000;
+}
+
+.guesscolor {
+    display: inline-block;
+    width: 16%;
+    border-radius: 50%;
+    background-color: #faf6e9;
+    box-shadow: 0.3em 0.54em 0 #3c2d23 inset;
+    margin: 0 1.5%;
+}
+
+#colorcontainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;   
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+    position: absolute;
+    transition: top 0.5s;
+}
+
+.colors6 {
+    width: 7.6em;
+}
+
+.colors4 {
+    width: 5em;
+}
+    
+
+.coloroption {
+    display: inline-block;
+    width: 2.2em;
+    margin: 0.2em;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.coloroption:focus {
+    outline: 0;
+}
+
+#settingscontainer {
+    margin: 1em auto;
+}
+
+
+
+.color1 {
+    background-color: #ffc53b;
+    box-shadow: 0 -2px 0 2px #ffbd20 inset, 0 10px rgba(255, 255, 255, 0.25) inset;
+}
+
+.color2 {
+    background-color: #f68224;
+    box-shadow: 0 -2px 0 2px #eb7a0d inset, 0 10px rgba(255, 255, 255, 0.25) inset;
+}
+
+.color3 {
+    background-color: #ff3b3b;
+    box-shadow: 0 -2px 0 2px #ff2020 inset, 0 10px rgba(255, 255, 255, 0.25) inset;
+}
+
+.color4 {
+    background-color: #20ec38;
+    box-shadow: 0 -2px 0 2px #29da17 inset, 0 10px rgba(255, 255, 255, 0.25) inset;
+}
+
+.color5 {
+    background-color: #3bcaff;
+    box-shadow: 0 -2px 0 2px #20aeff inset, 0 10px rgba(255, 255, 255, 0.25) inset;
+}
+
+.color6 {
+    background-color: #b33bff;
+    box-shadow: 0 -2px 0 2px #9920ff inset, 0 10px rgba(255, 255, 255, 0.25) inset;
+}
+
+.black {
+    background-color: #444444;
+    box-shadow: 0 -2px 0 2px #333333 inset, 0 7px rgba(255, 255, 255, 0.25) inset;
+}
+
+.white {
+    background-color: #d2d2d2;
+    box-shadow: 0 -2px 0 2px #a6a6a6 inset, 0 7px rgba(255, 255, 255, 0.25) inset;
+}
+    
